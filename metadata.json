@@ -1,0 +1,6 @@
+{
+  "name": "Pet Uau - Centro de Estética Canina e Pet Shop",
+  "description": "Centro de estética canina e pet shop especializado em Botucatu, SP. Banho, tosa na tesoura e cuidados premium para o seu melhor amigo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

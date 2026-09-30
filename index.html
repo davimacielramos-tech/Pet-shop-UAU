@@ -1,0 +1,2068 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Uau | Centro de Estética Canina e Pet Shop em Botucatu, SP</title>
+  <meta name="description" content="Centro de estética canina e pet shop especializado em Botucatu, SP. Banhos relaxantes, tosa na tesoura e cuidados com carinho que seu pet merece. Agende online!" />
+  <meta property="og:title" content="Pet Uau | Centro de Estética Canina em Botucatu, SP" />
+  <meta property="og:description" content="Especializado em banho e tosa na tesoura. Equipe carinhosa, ambiente limpo e produtos premium." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Cormorant Garamond (Serif Luxo), Inter (Sans limpo), Caveat (Cursiva charmosa) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org LocalBusiness (PetStore) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetStore",
+    "name": "Pet Uau",
+    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7",
+    "description": "Centro de estética canina e pet shop especializado em Botucatu, SP.",
+    "telephone": "+5514996459010",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Lincoln Vaz, 201",
+      "addressLocality": "Botucatu",
+      "addressRegion": "SP",
+      "postalCode": "18608-080",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.8856,
+      "longitude": -48.4452
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "73"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    /* ========================================================
+       PALETA E VARIÁVEIS EXCLUSIVAS
+       ======================================================== */
+    :root {
+      --purple-deep: #5B2A86;
+      --purple-dark: #3B1A5A;
+      --pink: #E88BB8;
+      --pink-light: #FBE8F1;
+      --white: #FFFFFF;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, sans-serif;
+      --font-cursive: 'Caveat', cursive;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--white);
+      color: var(--purple-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      color: var(--purple-deep);
+      line-height: 1.2;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    button, input, select, textarea { font-family: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Botoes Pilula */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background-color: var(--purple-deep);
+      color: var(--white);
+    }
+    .btn-primary:hover {
+      background-color: var(--purple-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(91, 42, 134, 0.25);
+    }
+    .btn-outline {
+      background-color: transparent;
+      border-color: var(--pink);
+      color: var(--purple-deep);
+    }
+    .btn-outline:hover {
+      background-color: var(--pink-light);
+      border-color: var(--purple-deep);
+      transform: translateY(-2px);
+    }
+    .btn-sm {
+      padding: 0.5rem 1.1rem;
+      font-size: 0.85rem;
+    }
+
+    /* Header Fixo Translúcido */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--pink-light);
+      transition: all 0.3s ease;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-cursive);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--purple-deep);
+    }
+    .logo-paw {
+      color: var(--pink);
+      font-size: 1.6rem;
+      transform: rotate(15deg);
+      display: inline-block;
+    }
+    nav.nav-desktop {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    nav.nav-desktop a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--purple-dark);
+      position: relative;
+      transition: color 0.2s;
+    }
+    nav.nav-desktop a:hover {
+      color: var(--pink);
+    }
+    .btn-menu-mobile {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--purple-deep);
+      padding: 0.5rem;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 74px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-bottom: 2px solid var(--pink-light);
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(91, 42, 134, 0.08);
+      z-index: 99;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: 130px;
+      padding-bottom: 60px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--pink-light) 100%);
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      color: var(--purple-deep);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3px;
+    }
+    .hero-badge span.star {
+      color: var(--pink);
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      margin-bottom: 1.25rem;
+      color: var(--purple-deep);
+      line-height: 1.15;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--purple-dark);
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      max-width: 540px;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Animação do Cachorrinho (100% SVG/CSS) */
+    .hero-dog-stage {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dog-pedestal {
+      position: absolute;
+      bottom: 20px;
+      width: 280px;
+      height: 24px;
+      background: rgba(232, 139, 184, 0.25);
+      border-radius: 50%;
+      filter: blur(4px);
+    }
+    .dog-svg-wrapper {
+      position: relative;
+      z-index: 2;
+      animation: dogWalkIn 2.2s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+    }
+
+    /* Animações Keyframes do Pet */
+    @keyframes dogWalkIn {
+      0% { transform: translateX(180px); opacity: 0; }
+      40% { opacity: 1; }
+      75% { transform: translateX(-10px); }
+      100% { transform: translateX(0); }
+    }
+    .dog-tail {
+      transform-origin: 45px 125px;
+      animation: wagTail 0.8s ease-in-out infinite alternate;
+    }
+    @keyframes wagTail {
+      0% { transform: rotate(-18deg); }
+      100% { transform: rotate(26deg); }
+    }
+    .dog-ears {
+      transform-origin: 105px 65px;
+      animation: wiggleEars 3.5s ease-in-out infinite;
+    }
+    @keyframes wiggleEars {
+      0%, 80%, 100% { transform: rotate(0deg); }
+      85% { transform: rotate(-5deg); }
+      92% { transform: rotate(5deg); }
+    }
+    .dog-eyes {
+      animation: blinkEyes 4s infinite;
+      transform-origin: center;
+    }
+    @keyframes blinkEyes {
+      0%, 94%, 98%, 100% { transform: scaleY(1); }
+      96% { transform: scaleY(0.1); }
+    }
+
+    /* Bolhinhas de sabão rosa flutuantes */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 35%, rgba(255, 255, 255, 0.9), rgba(232, 139, 184, 0.5) 60%, rgba(91, 42, 134, 0.3) 100%);
+      border: 1px solid rgba(232, 139, 184, 0.7);
+      box-shadow: 0 0 10px rgba(232, 139, 184, 0.3);
+      pointer-events: none;
+      animation: floatBubble 5s ease-in-out infinite;
+    }
+    .b1 { width: 34px; height: 34px; bottom: 80px; left: 15%; animation-duration: 4.8s; animation-delay: 0.2s; }
+    .b2 { width: 22px; height: 22px; bottom: 120px; right: 18%; animation-duration: 5.6s; animation-delay: 1.5s; }
+    .b3 { width: 42px; height: 42px; bottom: 60px; right: 30%; animation-duration: 6.2s; animation-delay: 2.8s; }
+    .b4 { width: 18px; height: 18px; bottom: 160px; left: 28%; animation-duration: 4.2s; animation-delay: 0.9s; }
+    .b5 { width: 28px; height: 28px; bottom: 90px; left: 45%; animation-duration: 5.1s; animation-delay: 3.2s; }
+
+    @keyframes floatBubble {
+      0% { transform: translateY(0) scale(0.85); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.85; }
+      100% { transform: translateY(-200px) scale(1.15); opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dog-svg-wrapper, .dog-tail, .dog-ears, .dog-eyes, .bubble {
+        animation: none !important;
+        transform: none !important;
+      }
+    }
+
+    /* Seções Gerais */
+    section {
+      padding: 5.5rem 0;
+      position: relative;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 3.5rem;
+    }
+    .section-kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--pink);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.8vw, 2.8rem);
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--purple-dark);
+      opacity: 0.85;
+    }
+
+    /* Sobre */
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .about-card {
+      background: var(--white);
+      border: 1px solid var(--pink-light);
+      border-radius: 20px;
+      padding: 2.2rem 1.8rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(232, 139, 184, 0.08);
+    }
+    .about-card:hover {
+      border-color: var(--pink);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(91, 42, 134, 0.1);
+    }
+    .about-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--pink-light);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--purple-deep);
+      margin-bottom: 1.25rem;
+    }
+    .about-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .about-card p {
+      font-size: 0.95rem;
+      color: var(--purple-dark);
+      opacity: 0.85;
+    }
+
+    /* Serviços */
+    .services-section {
+      background: var(--pink-light);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.75rem;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 2.2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(232, 139, 184, 0.4);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(91, 42, 134, 0.12);
+      border-color: var(--purple-deep);
+    }
+    .service-card.highlight {
+      border: 2px solid var(--purple-deep);
+    }
+    .service-tag {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--purple-deep);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.8rem;
+      border-radius: 9999px;
+      letter-spacing: 0.5px;
+    }
+    .service-icon-box {
+      width: 52px;
+      height: 52px;
+      background: var(--pink-light);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--purple-deep);
+      margin-bottom: 1.25rem;
+    }
+    .service-card h3 {
+      font-size: 1.55rem;
+      margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      font-size: 0.92rem;
+      color: var(--purple-dark);
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
+    }
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid var(--pink-light);
+    }
+    .service-price {
+      font-size: 0.85rem;
+      color: var(--purple-dark);
+      opacity: 0.9;
+    }
+    .service-price strong {
+      display: block;
+      font-size: 1.25rem;
+      color: var(--purple-deep);
+      font-family: var(--font-serif);
+    }
+
+    /* Sistema de Agendamento */
+    .booking-wrapper {
+      background: var(--white);
+      border: 1px solid var(--pink-light);
+      border-radius: 28px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 10px 40px rgba(91, 42, 134, 0.08);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    /* Barra de Progresso */
+    .progress-bar-container {
+      margin-bottom: 2.5rem;
+    }
+    .progress-steps {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 0.75rem;
+    }
+    .progress-line-bg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--pink-light);
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .progress-line-fill {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 3px;
+      background: var(--purple-deep);
+      transform: translateY(-50%);
+      z-index: 2;
+      transition: width 0.3s ease;
+    }
+    .step-node {
+      position: relative;
+      z-index: 3;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--pink-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--purple-dark);
+      transition: all 0.3s;
+    }
+    .step-node.active {
+      border-color: var(--purple-deep);
+      background: var(--purple-deep);
+      color: var(--white);
+    }
+    .step-node.completed {
+      border-color: var(--pink);
+      background: var(--pink);
+      color: var(--white);
+    }
+    .step-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--purple-dark);
+      opacity: 0.8;
+      text-align: center;
+    }
+
+    /* Etapas Form */
+    .step-content {
+      display: none;
+    }
+    .step-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--purple-deep);
+      margin-bottom: 0.5rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      border: 1px solid rgba(232, 139, 184, 0.4);
+      background: var(--white);
+      color: var(--purple-dark);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus {
+      border-color: var(--purple-deep);
+      box-shadow: 0 0 0 3px rgba(91, 42, 134, 0.12);
+    }
+
+    /* Service Selector Cards (Step 1) */
+    .service-selection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .select-card {
+      border: 2px solid var(--pink-light);
+      border-radius: 16px;
+      padding: 1.25rem 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      background: var(--white);
+    }
+    .select-card:hover {
+      border-color: var(--pink);
+    }
+    .select-card.selected {
+      border-color: var(--purple-deep);
+      background: var(--pink-light);
+    }
+    .select-card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+    }
+    .select-card span {
+      font-size: 0.85rem;
+      color: var(--purple-deep);
+      font-weight: 600;
+    }
+
+    /* Pet Options (Step 2) */
+    .choice-pills {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .choice-pill {
+      padding: 0.65rem 1.4rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(232, 139, 184, 0.5);
+      background: var(--white);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--purple-dark);
+      transition: all 0.2s;
+    }
+    .choice-pill.selected {
+      background: var(--purple-deep);
+      color: var(--white);
+      border-color: var(--purple-deep);
+    }
+
+    /* Horários Slots (Step 3) */
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .slot-btn {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: 1px solid var(--pink-light);
+      background: var(--white);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--purple-deep);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .slot-btn:hover:not(:disabled) {
+      border-color: var(--pink);
+      background: var(--pink-light);
+    }
+    .slot-btn.selected {
+      background: var(--purple-deep);
+      color: var(--white);
+      border-color: var(--purple-deep);
+    }
+    .slot-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      background: #fafafa;
+      text-decoration: line-through;
+    }
+
+    /* Summary Card (Step 5) */
+    .summary-box {
+      background: var(--pink-light);
+      border-radius: 18px;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed rgba(232, 139, 184, 0.5);
+      font-size: 0.95rem;
+    }
+    .summary-row:last-child {
+      border-bottom: none;
+    }
+    .summary-row span:first-child {
+      opacity: 0.8;
+    }
+    .summary-row span:last-child {
+      font-weight: 600;
+      color: var(--purple-deep);
+    }
+
+    /* Tela de Sucesso */
+    .success-card {
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--pink-light);
+      color: var(--purple-deep);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Botoes de Navegação do Form */
+    .wizard-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Galeria Minimalista Assimétrica */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(91, 42, 134, 0.08);
+      background: var(--pink-light);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.25rem;
+      background: linear-gradient(180deg, transparent 0%, rgba(59, 26, 90, 0.85) 100%);
+      color: var(--white);
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+    }
+    .gallery-item.col-8 { grid-column: span 8; height: 360px; }
+    .gallery-item.col-4 { grid-column: span 4; height: 360px; }
+    .gallery-item.col-6 { grid-column: span 6; height: 320px; }
+
+    /* Depoimentos */
+    .reviews-section {
+      background: var(--pink-light);
+    }
+    .reviews-carousel {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .review-card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 2.75rem 2.2rem;
+      text-align: center;
+      border: 1px solid rgba(232, 139, 184, 0.4);
+      box-shadow: 0 10px 30px rgba(91, 42, 134, 0.06);
+    }
+    .review-stars {
+      color: var(--pink);
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+      letter-spacing: 3px;
+    }
+    .review-quote {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      line-height: 1.45;
+      font-style: italic;
+      color: var(--purple-dark);
+      margin-bottom: 1.5rem;
+    }
+    .review-author {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--purple-deep);
+    }
+    .review-pet {
+      font-size: 0.82rem;
+      color: var(--pink);
+      display: block;
+    }
+    .carousel-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .carousel-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(232, 139, 184, 0.4);
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .carousel-dot.active {
+      background: var(--purple-deep);
+      width: 28px;
+      border-radius: 9999px;
+    }
+
+    /* Contato & Localização */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .contact-info-list {
+      list-style: none;
+      margin: 2rem 0;
+    }
+    .contact-item {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+    .contact-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--pink-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--purple-deep);
+      flex-shrink: 0;
+    }
+    .contact-item h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+    .contact-item p {
+      font-size: 0.95rem;
+      color: var(--purple-dark);
+      opacity: 0.85;
+    }
+    .map-frame {
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--pink-light);
+      box-shadow: 0 10px 30px rgba(91, 42, 134, 0.08);
+      height: 380px;
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: var(--purple-dark);
+      color: var(--white);
+      padding: 4.5rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .footer-logo {
+      font-family: var(--font-cursive);
+      font-size: 2.5rem;
+      color: var(--white);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .footer-desc {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      max-width: 320px;
+    }
+    .footer-col h4 {
+      color: var(--pink);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.25rem;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 0.75rem;
+    }
+    .footer-col a {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      transition: opacity 0.2s, color 0.2s;
+    }
+    .footer-col a:hover {
+      opacity: 1;
+      color: var(--pink);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(232, 139, 184, 0.2);
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    /* Botão Flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 58px;
+      height: 58px;
+      background-color: var(--purple-deep);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 25px rgba(91, 42, 134, 0.4);
+      z-index: 999;
+      color: var(--white);
+      transition: all 0.3s;
+      border: 2px solid var(--pink);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: var(--purple-dark);
+    }
+
+    /* Modal / Lightbox */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(59, 26, 90, 0.92);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .lightbox-modal.active {
+      display: flex;
+    }
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    /* Responsividade */
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero p { margin-left: auto; margin-right: auto; }
+      .hero-cta { justify-content: center; }
+      .about-cards { grid-template-columns: 1fr; }
+      .gallery-item.col-8, .gallery-item.col-4, .gallery-item.col-6 { grid-column: span 12; height: 280px; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    @media (max-width: 768px) {
+      nav.nav-desktop, .btn-header-agendar { display: none; }
+      .btn-menu-mobile { display: block; }
+      .hero { padding-top: 100px; }
+      .booking-wrapper { padding: 1.75rem 1.25rem; }
+      .step-labels { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================
+       1. HEADER FIXO E TRANSLÚCIDO
+       ======================================================== -->
+  <header id="main-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">
+        Pet Uau <span class="logo-paw">🐾</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento">Agendamento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#agendamento" class="btn btn-primary btn-sm btn-header-agendar">
+        Agendar Horário
+      </a>
+
+      <button class="btn-menu-mobile" id="mobile-toggle" aria-label="Abrir menu de navegação">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#inicio" class="mobile-nav-link">Início</a>
+      <a href="#sobre" class="mobile-nav-link">Sobre</a>
+      <a href="#servicos" class="mobile-nav-link">Serviços</a>
+      <a href="#agendamento" class="mobile-nav-link">Agendamento</a>
+      <a href="#galeria" class="mobile-nav-link">Galeria</a>
+      <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
+      <a href="#contato" class="mobile-nav-link">Contato</a>
+      <a href="#agendamento" class="btn btn-primary mobile-nav-link" style="text-align:center;">Agendar Horário</a>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       2. HERO COM ANIMAÇÃO DE CACHORRINHO (100% SVG/CSS)
+       ======================================================== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span class="star">★</span> 4,8 no Google <span style="opacity:0.5; margin:0 4px;">·</span> +70 avaliações de clientes felizes
+        </div>
+        <h1>Beleza e carinho para o seu melhor amigo</h1>
+        <p>Centro de estética canina e pet shop especializado em Botucatu, SP. Cuidado artesanal, tosa na tesoura e muito amor em cada detalhe.</p>
+        <div class="hero-cta">
+          <a href="#agendamento" class="btn btn-primary">Agendar horário</a>
+          <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+        </div>
+      </div>
+
+      <div class="hero-dog-stage" aria-label="Ilustração animada de cachorrinho no Pet Uau">
+        <!-- Bolhinhas de sabão rosa flutuantes -->
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+
+        <div class="dog-pedestal"></div>
+
+        <!-- SVG do cachorrinho minimalista feito à mão -->
+        <div class="dog-svg-wrapper">
+          <svg width="260" height="230" viewBox="0 0 260 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Rabo balançando continuamente -->
+            <path class="dog-tail" d="M62 135 C38 128 25 105 32 88 C36 80 46 82 48 94 C51 112 70 128 78 138" stroke="#5B2A86" stroke-width="4.5" stroke-linecap="round" fill="none" />
+            
+            <!-- Patas traseiras sentadas -->
+            <path d="M72 170 C60 170 52 182 58 192 C62 198 75 198 88 198 C95 198 102 192 98 185 C92 175 82 170 72 170Z" fill="#FBE8F1" stroke="#5B2A86" stroke-width="3.5" />
+            
+            <!-- Corpo macio e elegante -->
+            <path d="M85 130 C80 95 110 85 130 90 C155 96 165 125 160 165 C156 195 142 198 115 198 C82 198 78 160 85 130Z" fill="#FFFFFF" stroke="#5B2A86" stroke-width="4" />
+            
+            <!-- Patas dianteiras retas e firmes -->
+            <path d="M125 140 L125 198" stroke="#5B2A86" stroke-width="4" stroke-linecap="round" />
+            <path d="M142 140 L142 198" stroke="#5B2A86" stroke-width="4" stroke-linecap="round" />
+            <!-- Patinhas dianteiras -->
+            <ellipse cx="125" cy="198" rx="8" ry="4" fill="#FBE8F1" stroke="#5B2A86" stroke-width="3" />
+            <ellipse cx="142" cy="198" rx="8" ry="4" fill="#FBE8F1" stroke="#5B2A86" stroke-width="3" />
+
+            <!-- Cabeça arredondada e fofa -->
+            <ellipse cx="145" cy="72" rx="42" ry="38" fill="#FFFFFF" stroke="#5B2A86" stroke-width="4" />
+
+            <!-- Orelhas expressivas com leve movimento -->
+            <g class="dog-ears">
+              <path d="M115 54 C100 45 88 65 92 88 C95 105 108 115 116 98 Z" fill="#FBE8F1" stroke="#5B2A86" stroke-width="3.5" />
+              <path d="M175 54 C190 45 202 65 198 88 C195 105 182 115 174 98 Z" fill="#FBE8F1" stroke="#5B2A86" stroke-width="3.5" />
+            </g>
+
+            <!-- Olhos piscando suavemente -->
+            <g class="dog-eyes">
+              <ellipse cx="132" cy="68" rx="4.5" ry="5.5" fill="#3B1A5A" />
+              <circle cx="134" cy="66" r="1.5" fill="#FFFFFF" />
+              <ellipse cx="158" cy="68" rx="4.5" ry="5.5" fill="#3B1A5A" />
+              <circle cx="160" cy="66" r="1.5" fill="#FFFFFF" />
+            </g>
+
+            <!-- Focinho, nariz e boquinha sorrindo -->
+            <ellipse cx="145" cy="80" rx="6" ry="4.5" fill="#5B2A86" />
+            <path d="M145 84.5 L145 90" stroke="#5B2A86" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M139 90 C142 93 145 93 145 90 C145 93 148 93 151 90" stroke="#5B2A86" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+            <!-- Bochechas rosadas suaves -->
+            <ellipse cx="122" cy="78" rx="5" ry="3" fill="#E88BB8" opacity="0.6" />
+            <ellipse cx="168" cy="78" rx="5" ry="3" fill="#E88BB8" opacity="0.6" />
+
+            <!-- Lacinho charmoso no pescoço -->
+            <path d="M136 106 C128 100 126 112 134 110 C138 109 142 109 145 109 C148 109 152 109 156 110 C164 112 162 100 154 106 Z" fill="#E88BB8" stroke="#5B2A86" stroke-width="2" />
+            <circle cx="145" cy="108" r="3.5" fill="#5B2A86" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       3. SOBRE: A ESSÊNCIA PET UAU
+       ======================================================== -->
+  <section id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Sobre Nós</span>
+        <h2 class="section-title">O cuidado que seu pet merece</h2>
+        <p class="section-desc">Na Pet Uau, acreditamos que a higiene e o banho devem ser momentos de puro relaxamento e bem-estar para o seu bichinho.</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>Carinho Familiar</h3>
+          <p>Nossa equipe acolhe cada cãozinho e gatinho com paciência, carinho e respeito. Tratamos seu pet como se fosse parte da nossa própria família.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Higiene Impecável</h3>
+          <p>Ambiente esterilizado, toalhas descartáveis e higienizadas, além de produtos dermocosméticos de linha profissional hipoalergênica.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 10-4 4-2-2"/></svg>
+          </div>
+          <h3>Preço Justo</h3>
+          <p>Estética animal de alto padrão com preços transparentes e justos, tornando o melhor tratamento acessível para quem ama seu melhor amigo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. SERVIÇOS EM CARDS ELEGANTES
+       ======================================================== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Nossos Cuidados</span>
+        <h2 class="section-title">Serviços Especializados</h2>
+        <p class="section-desc">Procedimentos executados por profissionais dedicados com foco no conforto e na beleza da pelagem.</p>
+      </div>
+
+      <!-- Inseridos dinamicamente pelo JS via SERVICOS_CONFIG -->
+      <div class="services-grid" id="services-container"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. SISTEMA DE AGENDAMENTO (EM ETAPAS)
+       ======================================================== -->
+  <section id="agendamento">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Agendamento Fácil</span>
+        <h2 class="section-title">Reserve o Horário do Seu Pet</h2>
+        <p class="section-desc">Escolha os serviços, data e horário preferidos em poucos cliques. Confirmamos seu horário direto pelo WhatsApp.</p>
+      </div>
+
+      <div class="booking-wrapper">
+        <!-- Barra de Progresso com 5 Etapas -->
+        <div class="progress-bar-container">
+          <div class="progress-steps">
+            <div class="progress-line-bg"></div>
+            <div class="progress-line-fill" id="progress-line"></div>
+            <div class="step-node active" id="node-1">1</div>
+            <div class="step-node" id="node-2">2</div>
+            <div class="step-node" id="node-3">3</div>
+            <div class="step-node" id="node-4">4</div>
+            <div class="step-node" id="node-5">5</div>
+          </div>
+          <div class="step-labels">
+            <span>Serviço</span>
+            <span>Dados Pet</span>
+            <span>Data & Hora</span>
+            <span>Tutor</span>
+            <span>Confirmar</span>
+          </div>
+        </div>
+
+        <form id="booking-form" onsubmit="event.preventDefault();">
+          <!-- ETAPA 1: Escolha do Serviço -->
+          <div class="step-content active" id="step-1">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Qual serviço seu pet precisa?</h3>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1.5rem;">Selecione uma das opções abaixo para continuarmos:</p>
+            
+            <div class="service-selection-grid" id="service-selector-cards">
+              <!-- Preenchido via JS -->
+            </div>
+            
+            <div class="wizard-actions" style="justify-content: flex-end;">
+              <button type="button" class="btn btn-primary" onclick="nextStep(2)">Continuar</button>
+            </div>
+          </div>
+
+          <!-- ETAPA 2: Dados do Pet -->
+          <div class="step-content" id="step-2">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Conte sobre o seu pet</h3>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1.5rem;">Precisamos conhecê-lo para preparar os melhores cuidados:</p>
+
+            <div class="form-group">
+              <label class="form-label" for="pet-name">Nome do Pet *</label>
+              <input type="text" id="pet-name" class="form-control" placeholder="Ex: Bob, Mel, Thor..." required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Espécie *</label>
+              <div class="choice-pills" id="species-pills">
+                <button type="button" class="choice-pill selected" data-value="Cão" onclick="selectChoice('species-pills', this)">🐶 Cão</button>
+                <button type="button" class="choice-pill" data-value="Gato" onclick="selectChoice('species-pills', this)">🐱 Gato</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Porte do Pet *</label>
+              <div class="choice-pills" id="size-pills">
+                <button type="button" class="choice-pill selected" data-value="Pequeno (até 10kg)" onclick="selectChoice('size-pills', this)">Pequeno (até 10kg)</button>
+                <button type="button" class="choice-pill" data-value="Médio (10 a 25kg)" onclick="selectChoice('size-pills', this)">Médio (10 a 25kg)</button>
+                <button type="button" class="choice-pill" data-value="Grande (+25kg)" onclick="selectChoice('size-pills', this)">Grande (+25kg)</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pet-breed">Raça (opcional)</label>
+              <input type="text" id="pet-breed" class="form-control" placeholder="Ex: Shih Tzu, Poodle, SRD, Golden...">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pet-notes">Observações especiais</label>
+              <textarea id="pet-notes" class="form-control" rows="2" placeholder="Possui alguma alergia, é idoso, sensível ou arisco?"></textarea>
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevStep(1)">Voltar</button>
+              <button type="button" class="btn btn-primary" onclick="validateStep2()">Continuar</button>
+            </div>
+          </div>
+
+          <!-- ETAPA 3: Data e Horário -->
+          <div class="step-content" id="step-3">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Escolha o dia e horário</h3>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1.5rem;">Segunda a Sexta (08h às 18h) e Sábado (08h às 17h). Domingos fechado.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="booking-date">Data do Atendimento *</label>
+              <input type="date" id="booking-date" class="form-control" onchange="handleDateChange(this.value)">
+              <small id="date-warning" style="color: var(--pink); display: none; font-size: 0.85rem; margin-top: 0.25rem;">Por favor, escolha uma data futura (exceto domingos).</small>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Horários Disponíveis (1 hora)</label>
+              <div class="slots-grid" id="slots-container">
+                <!-- Preenchido dinamicamente -->
+              </div>
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevStep(2)">Voltar</button>
+              <button type="button" class="btn btn-primary" onclick="validateStep3()">Continuar</button>
+            </div>
+          </div>
+
+          <!-- ETAPA 4: Dados do Tutor -->
+          <div class="step-content" id="step-4">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Dados de contato do tutor</h3>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1.5rem;">Para que possamos identificar o agendamento e avisar quando seu pet estiver pronto:</p>
+
+            <div class="form-group">
+              <label class="form-label" for="tutor-name">Seu Nome Completo *</label>
+              <input type="text" id="tutor-name" class="form-control" placeholder="Ex: Maria Oliveira" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tutor-phone">WhatsApp / Telefone *</label>
+              <input type="tel" id="tutor-phone" class="form-control" placeholder="(14) 99999-9999" required oninput="maskPhone(this)">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tutor-email">E-mail (opcional)</label>
+              <input type="email" id="tutor-email" class="form-control" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevStep(3)">Voltar</button>
+              <button type="button" class="btn btn-primary" onclick="validateStep4()">Revisar Agendamento</button>
+            </div>
+          </div>
+
+          <!-- ETAPA 5: Confirmação e Envio WhatsApp -->
+          <div class="step-content" id="step-5">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Resumo do seu agendamento</h3>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1.5rem;">Revise os dados abaixo antes de enviar para a equipe do Pet Uau:</p>
+
+            <div class="summary-box" id="booking-summary">
+              <!-- Preenchido via JS -->
+            </div>
+
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevStep(4)">Corrigir Dados</button>
+              <button type="button" class="btn btn-primary" onclick="confirmBooking()">
+                Confirmar pelo WhatsApp 🐾
+              </button>
+            </div>
+          </div>
+
+          <!-- TELA DE SUCESSO FINAL -->
+          <div class="step-content" id="step-success">
+            <div class="success-card">
+              <div class="success-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Agendamento Encaminhado!</h3>
+              <p style="font-size: 1.05rem; opacity: 0.85; max-width: 520px; margin: 0 auto 1.75rem;">
+                A janela do WhatsApp foi aberta com os dados do seu pet. Nossa equipe responderá em breve confirmando tudo!
+              </p>
+              <button type="button" class="btn btn-primary" onclick="resetBooking()">Novo Agendamento</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       6. GALERIA MINIMALISTA ASSIMÉTRICA
+       ======================================================== -->
+  <section id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Nossa Boutique</span>
+        <h2 class="section-title">Galeria de Transformações</h2>
+        <p class="section-desc">Cuidado visível em cada pelagem. Conheça um pouco da nossa estética e espaço.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- FOTO 1: Resultado real de tosa e estilo com gravatinha e óculos -->
+        <div class="gallery-item col-6" onclick="openLightbox(this)">
+          <img src="/src/assets/images/gallery_shih_tzu_groomed_1790781803305.jpg" alt="Resultado real: Shih Tzu após banho e tosa na tesoura com óculos e gravata no Pet Uau" loading="lazy">
+          <div class="gallery-caption">Resultado Real: Shih Tzu pós-banho e tosa estilizada no Pet Uau</div>
+        </div>
+
+        <!-- FOTO 2: Especialidade: Tosa na tesoura artesanal -->
+        <div class="gallery-item col-6" onclick="openLightbox(this)">
+          <img src="/src/assets/images/gallery_pet_grooming_scissor_1790777395287.jpg" alt="Tosa na tesoura de alta precisão no Pet Uau" loading="lazy">
+          <div class="gallery-caption">Especialidade: Tosa na Tesoura com acabamento artesanal</div>
+        </div>
+
+        <!-- FOTO 3: Fachada real com muro roxo da boutique Pet Uau -->
+        <div class="gallery-item col-4" onclick="openLightbox(this)">
+          <img src="/src/assets/images/gallery_pet_facade_real_1790781170882.jpg" alt="Fachada real com muro roxo e letreiro do Pet Uau em Botucatu, SP" loading="lazy">
+          <div class="gallery-caption">Fachada real Pet Uau · Rua Lincoln Vaz, 201 (Botucatu, SP)</div>
+        </div>
+
+        <!-- FOTO 4: Resultado real - Shih Tzu preto com bandana azul e óculos -->
+        <div class="gallery-item col-4" onclick="openLightbox(this)">
+          <img src="/src/assets/images/gallery_black_shih_tzu_bandana_1790781961837.jpg" alt="Resultado real: Shih Tzu preto e branco com bandana azul e óculos no Pet Uau" loading="lazy">
+          <div class="gallery-caption">Resultado Real: Shih Tzu com bandana azul e óculos no Pet Uau</div>
+        </div>
+
+        <!-- FOTO 5: Interior higienizado e organizado -->
+        <div class="gallery-item col-4" onclick="openLightbox(this)">
+          <img src="/src/assets/images/gallery_pet_spa_interior_1790777430794.jpg" alt="Interior moderno e higienizado da estética animal" loading="lazy">
+          <div class="gallery-caption">Ambiente limpo, higienizado e aconchegante</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       7. DEPOIMENTOS (AVALIAÇÕES REAIS GOOGLE 4.8 ESTRELAS)
+       ======================================================== -->
+  <section class="reviews-section" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Depoimentos</span>
+        <h2 class="section-title">O que dizem os tutores</h2>
+        <p class="section-desc">Avaliação 4,8 estrelas no Google com mais de 70 avaliações de clientes satisfeitos.</p>
+      </div>
+
+      <div class="reviews-carousel">
+        <div class="review-card" id="review-display">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote" id="review-quote">"A equipe é extremamente carinhosa, cuidam do meu cachorrinho como se fosse da família. Ele sempre volta calmo, cheiroso e com o pelo macio demais!"</p>
+          <div class="review-author" id="review-author">Cliente Verificado no Google</div>
+          <span class="review-pet" id="review-pet">Tutor de Shih Tzu</span>
+        </div>
+
+        <div class="carousel-nav" id="carousel-dots">
+          <button class="carousel-dot active" onclick="setReview(0)" aria-label="Depoimento 1"></button>
+          <button class="carousel-dot" onclick="setReview(1)" aria-label="Depoimento 2"></button>
+          <button class="carousel-dot" onclick="setReview(2)" aria-label="Depoimento 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       8. CONTATO E LOCALIZAÇÃO (COM MAPA EMBED)
+       ======================================================== -->
+  <section id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Onde Estamos</span>
+        <h2 class="section-title">Venha nos Visitar</h2>
+        <p class="section-desc">Fácil acesso na Vila Nossa Senhora de Fátima, em Botucatu.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-info-list">
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Endereço</h4>
+                <p>Rua Lincoln Vaz, 201 – Vila Nossa Sra. de Fátima<br>Botucatu – SP, CEP 18608-080</p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Telefone & WhatsApp</h4>
+                <p><a href="https://wa.me/5514996459010" target="_blank" rel="noopener">(14) 99645-9010</a></p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda a Sexta: 08:00 às 18:00<br>Sábado: 08:00 às 17:00 (Hoje fecha às 17:00)<br>Domingo: Fechado</p>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top: 2rem;">
+            <a href="https://wa.me/5514996459010" target="_blank" rel="noopener" class="btn btn-primary">
+              Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <!-- Google Maps Embed com endereço real em Botucatu -->
+          <iframe 
+            title="Localização do Pet Uau em Botucatu"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.898863691653!2d-48.4475456!3d-22.8856983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6d66e2c34d4a9%3A0x6b47c0bca87b41b5!2sRua%20Lincoln%20Vaz%2C%20201%20-%20Vila%20Nossa%20Sra.%20de%20Fatima%2C%20Botucatu%20-%20SP%2C%2018608-080!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       9. RODAPÉ LUXUOSO ROXO ESCURO
+       ======================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#inicio" class="footer-logo">
+            Pet Uau <span style="color:var(--pink);">🐾</span>
+          </a>
+          <p class="footer-desc">Centro de estética canina e pet shop especializado em Botucatu, SP. Carinho, higiene de alto padrão e tosa na tesoura artesanal.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul>
+            <li>Rua Lincoln Vaz, 201</li>
+            <li>Vila N. Sra. de Fátima</li>
+            <li>Botucatu – SP</li>
+            <li><a href="tel:14996459010">(14) 99645-9010</a></li>
+            <li>wa.me/5514996459010</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Pet Uau. Todos os direitos reservados. Centro de Estética Canina em Botucatu, SP.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       BOTÃO FLUTUANTE DE WHATSAPP
+       ======================================================== -->
+  <a href="https://wa.me/5514996459010" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <!-- Lightbox Modal para Galeria -->
+  <div class="lightbox-modal" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Fechar">&times;</button>
+    <img src="" alt="Imagem ampliada do Pet Uau" class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()">
+  </div>
+
+  <!-- ========================================================
+       JAVASCRIPT ORGANIZADO E COMENTADO
+       ======================================================== -->
+  <script>
+    /* ========================================================
+       CONFIGURAÇÃO EDITÁVEL DE SERVIÇOS E PREÇOS
+       Altere aqui facilmente os valores "a partir de R$ [PREENCHER]"
+       ======================================================== */
+    const SERVICOS_CONFIG = [
+      {
+        id: "banho",
+        nome: "Banho Especial",
+        descricao: "Higiênico, completo e hidratação profunda com produtos dermocosméticos selecionados.",
+        precoMin: "a partir de R$ [PREENCHER]",
+        valorEstimado: "R$ 45,00",
+        destaque: false,
+        icone: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0l-.88.88a1.5 1.5 0 0 0 0 2.12L6 9"/><path d="m8 8 10.5 10.5a2.5 2.5 0 0 1 0 3.54l-.46.46a2.5 2.5 0 0 1-3.54 0L4 12"/><circle cx="16" cy="7" r="3"/></svg>'
+      },
+      {
+        id: "tosa",
+        nome: "Tosa Especializada",
+        descricao: "Higienica, tosa na máquina e nossa grande especialidade: tosa artística na tesoura.",
+        precoMin: "a partir de R$ [PREENCHER]",
+        valorEstimado: "R$ 65,00",
+        destaque: true,
+        tag: "Destaque: Tosa na Tesoura",
+        icone: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>'
+      },
+      {
+        id: "combo",
+        nome: "Banho & Tosa Combo",
+        descricao: "O pacote completo de cuidados: banho relaxante, hidratação e tosa para renovar o visual.",
+        precoMin: "a partir de R$ [PREENCHER]",
+        valorEstimado: "R$ 95,00",
+        destaque: false,
+        icone: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'
+      },
+      {
+        id: "consultas",
+        nome: "Consultas & Avaliação",
+        descricao: "Avaliação preventiva da pele, ouvidos, pelagem e bem-estar geral do pet.",
+        precoMin: "a partir de R$ [PREENCHER]",
+        valorEstimado: "R$ 80,00",
+        destaque: false,
+        icone: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>'
+      },
+      {
+        id: "extras",
+        nome: "Cuidados Extras",
+        descricao: "Corte de unhas, limpeza delicada de ouvidos, escovação dental e desembolo com carinho.",
+        precoMin: "a partir de R$ [PREENCHER]",
+        valorEstimado: "R$ 20,00",
+        destaque: false,
+        icone: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>'
+      }
+    ];
+
+    /* Horários disponíveis configuráveis */
+    const HORARIOS_CONFIG = [
+      "08:00", "09:00", "10:00", "11:00",
+      "13:00", "14:00", "15:00", "16:00"
+    ];
+
+    /* Estado da Reserva */
+    const bookingState = {
+      step: 1,
+      servicoId: "tosa",
+      servicoNome: "Tosa Especializada",
+      petNome: "",
+      especie: "Cão",
+      porte: "Pequeno (até 10kg)",
+      raca: "",
+      observacoes: "",
+      data: "",
+      horario: "",
+      tutorNome: "",
+      tutorTelefone: "",
+      tutorEmail: ""
+    };
+
+    /* Renderizar Cards de Serviços */
+    function renderServices() {
+      const container = document.getElementById("services-container");
+      const selectorContainer = document.getElementById("service-selector-cards");
+      if (!container) return;
+
+      container.innerHTML = SERVICOS_CONFIG.map(serv => `
+        <div class="service-card ${serv.destaque ? 'highlight' : ''}">
+          ${serv.tag ? `<span class="service-tag">${serv.tag}</span>` : ''}
+          <div>
+            <div class="service-icon-box">${serv.icone}</div>
+            <h3>${serv.nome}</h3>
+            <p>${serv.descricao}</p>
+          </div>
+          <div class="service-footer">
+            <div class="service-price">
+              Preço
+              <strong>${serv.precoMin}</strong>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="selectServiceAndGo('${serv.id}')">Agendar</button>
+          </div>
+        </div>
+      `).join('');
+
+      if (selectorContainer) {
+        selectorContainer.innerHTML = SERVICOS_CONFIG.map(serv => `
+          <div class="select-card ${bookingState.servicoId === serv.id ? 'selected' : ''}" 
+               id="card-select-${serv.id}" 
+               onclick="selectService('${serv.id}')">
+            <h4>${serv.nome}</h4>
+            <span>${serv.precoMin}</span>
+          </div>
+        `).join('');
+      }
+    }
+
+    function selectService(id) {
+      bookingState.servicoId = id;
+      const found = SERVICOS_CONFIG.find(s => s.id === id);
+      if (found) bookingState.servicoNome = found.nome;
+
+      document.querySelectorAll(".select-card").forEach(c => c.classList.remove("selected"));
+      const target = document.getElementById(`card-select-${id}`);
+      if (target) target.classList.add("selected");
+    }
+
+    function selectServiceAndGo(id) {
+      selectService(id);
+      const bookingSec = document.getElementById("agendamento");
+      if (bookingSec) bookingSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function selectChoice(containerId, btn) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      container.querySelectorAll(".choice-pill").forEach(p => p.classList.remove("selected"));
+      btn.classList.add("selected");
+      if (containerId === "species-pills") bookingState.especie = btn.dataset.value;
+      if (containerId === "size-pills") bookingState.porte = btn.dataset.value;
+    }
+
+    /* Navegação do Formulário */
+    function goToStep(n) {
+      bookingState.step = n;
+      document.querySelectorAll(".step-content").forEach(el => el.classList.remove("active"));
+      const current = document.getElementById(`step-${n}`);
+      if (current) current.classList.add("active");
+
+      // Atualizar nós e barra
+      for (let i = 1; i <= 5; i++) {
+        const node = document.getElementById(`node-${i}`);
+        if (!node) continue;
+        node.classList.remove("active", "completed");
+        if (i < n) node.classList.add("completed");
+        if (i === n) node.classList.add("active");
+      }
+      const fill = document.getElementById("progress-line");
+      if (fill) fill.style.width = `${((n - 1) / 4) * 100}%`;
+    }
+
+    function nextStep(n) {
+      goToStep(n);
+    }
+    function prevStep(n) {
+      goToStep(n);
+    }
+
+    function validateStep2() {
+      const name = document.getElementById("pet-name").value.trim();
+      if (!name) {
+        alert("Por favor, digite o nome do seu pet.");
+        document.getElementById("pet-name").focus();
+        return;
+      }
+      bookingState.petNome = name;
+      bookingState.raca = document.getElementById("pet-breed").value.trim();
+      bookingState.observacoes = document.getElementById("pet-notes").value.trim();
+      goToStep(3);
+      initDateSlots();
+    }
+
+    function initDateSlots() {
+      const dateInput = document.getElementById("booking-date");
+      const today = new Date();
+      // Mínimo é hoje
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      dateInput.min = `${yyyy}-${mm}-${dd}`;
+      if (!bookingState.data) {
+        // Sugere amanhã se hoje for domingo ou fim do dia
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        if (tomorrow.getDay() === 0) tomorrow.setDate(tomorrow.getDate() + 1);
+        const tY = tomorrow.getFullYear();
+        const tM = String(tomorrow.getMonth() + 1).padStart(2, '0');
+        const tD = String(tomorrow.getDate()).padStart(2, '0');
+        dateInput.value = `${tY}-${tM}-${tD}`;
+        handleDateChange(dateInput.value);
+      }
+    }
+
+    function handleDateChange(val) {
+      const warning = document.getElementById("date-warning");
+      const selected = new Date(val + "T00:00:00");
+      // Se for domingo (day 0)
+      if (selected.getDay() === 0) {
+        warning.textContent = "Aos domingos o Pet Uau está fechado para descanso dos pets. Escolha de segunda a sábado.";
+        warning.style.display = "block";
+        document.getElementById("slots-container").innerHTML = "";
+        bookingState.data = "";
+        return;
+      }
+      warning.style.display = "none";
+      bookingState.data = val;
+      renderSlots(val);
+    }
+
+    /* Simulação de horários reservados via localStorage */
+    function getBookedSlots(dateStr) {
+      try {
+        const stored = JSON.parse(localStorage.getItem("petuau_booked_slots") || "{}");
+        if (!stored[dateStr]) {
+          // Mock inicial com 1 ou 2 horários já ocupados para realismo
+          stored[dateStr] = ["10:00", "14:00"];
+        }
+        return stored[dateStr];
+      } catch (e) {
+        return ["10:00"];
+      }
+    }
+
+    function renderSlots(dateStr) {
+      const container = document.getElementById("slots-container");
+      if (!container) return;
+      const booked = getBookedSlots(dateStr);
+
+      container.innerHTML = HORARIOS_CONFIG.map(h => {
+        const isBooked = booked.includes(h);
+        const isSelected = bookingState.horario === h;
+        return `
+          <button type="button" 
+                  class="slot-btn ${isSelected ? 'selected' : ''}" 
+                  ${isBooked ? 'disabled title="Horário já reservado"' : ''}
+                  onclick="selectSlot('${h}')">
+            ${h}
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectSlot(h) {
+      bookingState.horario = h;
+      document.querySelectorAll(".slot-btn").forEach(b => b.classList.remove("selected"));
+      event.target.classList.add("selected");
+    }
+
+    function validateStep3() {
+      if (!bookingState.data) {
+        alert("Por favor, selecione uma data válida.");
+        return;
+      }
+      if (!bookingState.horario) {
+        alert("Por favor, selecione um horário disponível.");
+        return;
+      }
+      goToStep(4);
+    }
+
+    function maskPhone(input) {
+      let v = input.value.replace(/\D/g, "");
+      if (v.length > 11) v = v.slice(0, 11);
+      if (v.length > 6) {
+        input.value = `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+      } else if (v.length > 2) {
+        input.value = `(${v.slice(0, 2)}) ${v.slice(2)}`;
+      } else {
+        input.value = v;
+      }
+    }
+
+    function validateStep4() {
+      const name = document.getElementById("tutor-name").value.trim();
+      const phone = document.getElementById("tutor-phone").value.trim();
+      if (!name) {
+        alert("Por favor, preencha o seu nome.");
+        document.getElementById("tutor-name").focus();
+        return;
+      }
+      if (phone.length < 14) {
+        alert("Por favor, digite um telefone/WhatsApp válido.");
+        document.getElementById("tutor-phone").focus();
+        return;
+      }
+      bookingState.tutorNome = name;
+      bookingState.tutorTelefone = phone;
+      bookingState.tutorEmail = document.getElementById("tutor-email").value.trim();
+      renderSummary();
+      goToStep(5);
+    }
+
+    function renderSummary() {
+      const box = document.getElementById("booking-summary");
+      if (!box) return;
+      const dataFormatted = bookingState.data.split('-').reverse().join('/');
+
+      box.innerHTML = `
+        <div class="summary-row">
+          <span>Serviço Escolhido:</span>
+          <span>${bookingState.servicoNome}</span>
+        </div>
+        <div class="summary-row">
+          <span>Pet & Espécie:</span>
+          <span>${bookingState.petNome} (${bookingState.especie} · ${bookingState.porte})</span>
+        </div>
+        ${bookingState.raca ? `
+        <div class="summary-row">
+          <span>Raça:</span>
+          <span>${bookingState.raca}</span>
+        </div>` : ''}
+        <div class="summary-row">
+          <span>Data e Horário:</span>
+          <span>${dataFormatted} às ${bookingState.horario}</span>
+        </div>
+        <div class="summary-row">
+          <span>Tutor Responsável:</span>
+          <span>${bookingState.tutorNome}</span>
+        </div>
+        <div class="summary-row">
+          <span>WhatsApp de Contato:</span>
+          <span>${bookingState.tutorTelefone}</span>
+        </div>
+        ${bookingState.observacoes ? `
+        <div class="summary-row">
+          <span>Observações:</span>
+          <span>${bookingState.observacoes}</span>
+        </div>` : ''}
+      `;
+    }
+
+    /*
+     * ========================================================
+     * [PONTO DE INTEGRAÇÃO COM BACKEND - FIREBASE / SUPABASE / EMAIL]
+     * Para persistir o agendamento em um banco de dados real:
+     * 1. Inicialize o Firebase SDK ou Supabase client.
+     * 2. Descomente a chamada abaixo para gravar o registro:
+     *
+     * async function salvarNoBanco(dados) {
+     *   // Exemplo Firebase Firestore:
+     *   // await db.collection('agendamentos').add(dados);
+     *   // Exemplo Supabase:
+     *   // await supabase.from('agendamentos').insert([dados]);
+     * }
+     * ========================================================
+     */
+    function confirmBooking() {
+      // Salva no localStorage como horário bloqueado
+      try {
+        const stored = JSON.parse(localStorage.getItem("petuau_booked_slots") || "{}");
+        if (!stored[bookingState.data]) stored[bookingState.data] = [];
+        if (!stored[bookingState.data].includes(bookingState.horario)) {
+          stored[bookingState.data].push(bookingState.horario);
+          localStorage.setItem("petuau_booked_slots", JSON.stringify(stored));
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
+      // Monta mensagem amigável para o WhatsApp do Pet Uau (14) 99645-9010
+      const dataFormatada = bookingState.data.split('-').reverse().join('/');
+      const texto = `Olá, equipe do Pet Uau! 🐾 Gostaria de confirmar um agendamento:
+
+✨ *Serviço:* ${bookingState.servicoNome}
+🐶 *Pet:* ${bookingState.petNome} (${bookingState.especie} - ${bookingState.porte}${bookingState.raca ? `, ${bookingState.raca}` : ''})
+📅 *Data:* ${dataFormatada} às ${bookingState.horario}
+👤 *Tutor:* ${bookingState.tutorNome}
+📱 *Telefone:* ${bookingState.tutorTelefone}
+${bookingState.observacoes ? `📝 *Observações:* ${bookingState.observacoes}\n` : ''}
+Poderiam confirmar a disponibilidade deste horário? Muito obrigado!`;
+
+      const zapUrl = `https://wa.me/5514996459010?text=${encodeURIComponent(texto)}`;
+      window.open(zapUrl, '_blank');
+
+      // Mostra tela de sucesso
+      document.querySelectorAll(".step-content").forEach(el => el.classList.remove("active"));
+      document.getElementById("step-success").classList.add("active");
+    }
+
+    function resetBooking() {
+      bookingState.petNome = "";
+      bookingState.raca = "";
+      bookingState.observacoes = "";
+      bookingState.horario = "";
+      document.getElementById("pet-name").value = "";
+      document.getElementById("pet-breed").value = "";
+      document.getElementById("pet-notes").value = "";
+      goToStep(1);
+    }
+
+    /* Depoimentos Carousel */
+    const REVIEWS_DATA = [
+      {
+        quote: '"A equipe é extremamente carinhosa, cuidam do meu cachorrinho como se fosse da família. Ele sempre volta calmo, cheiroso e com o pelo macio demais! Melhor pet shop de Botucatu."',
+        author: "Carla Silveira",
+        pet: "Tutora do Pipoca (Shih Tzu)"
+      },
+      {
+        quote: '"Local impecável, muito limpo e organizado. A tosa na tesoura ficou simplesmente perfeita, exatamente como pedi. Preço super justo pela qualidade excepcional do serviço!"',
+        author: "Rodrigo Mendes",
+        pet: "Tutor do Thor (Golden Retriever)"
+      },
+      {
+        quote: '"Atendimento nota mil! O carinho que eles têm com os bichinhos é visível na hora que a gente chega. Meu pet volta com uma pelagem linda e um cheirinho maravilhoso."',
+        author: "Fernanda Albuquerque",
+        pet: "Tutora da Mel (Poodle)"
+      }
+    ];
+
+    function setReview(idx) {
+      const q = document.getElementById("review-quote");
+      const a = document.getElementById("review-author");
+      const p = document.getElementById("review-pet");
+      if (!q || !a || !p) return;
+
+      q.style.opacity = 0;
+      setTimeout(() => {
+        q.textContent = REVIEWS_DATA[idx].quote;
+        a.textContent = REVIEWS_DATA[idx].author;
+        p.textContent = REVIEWS_DATA[idx].pet;
+        q.style.opacity = 1;
+      }, 200);
+
+      document.querySelectorAll(".carousel-dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === idx);
+      });
+    }
+
+    /* Lightbox Modal */
+    function openLightbox(el) {
+      const img = el.querySelector("img");
+      if (!img) return;
+      const modal = document.getElementById("lightbox");
+      const modalImg = document.getElementById("lightbox-img");
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modal.classList.add("active");
+    }
+    function closeLightbox() {
+      const modal = document.getElementById("lightbox");
+      if (modal) modal.classList.remove("active");
+    }
+
+    /* Menu Mobile */
+    const mobileToggle = document.getElementById("mobile-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
+      });
+    }
+
+    /* Inicialização */
+    document.addEventListener("DOMContentLoaded", () => {
+      renderServices();
+    });
+  </script>
+</body>
+</html>
